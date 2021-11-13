@@ -1,0 +1,82 @@
+/*************************hoja de estilo para la presentación de halloween*****************/
+/*************************IMPORTANTE: no es responsive*************************************/
+
+@font-face{
+    font-family: halloween;
+    src: url("../fonts/Creepster-Regular.ttf");
+}
+
+body{
+    background-color: #1f1111;
+}
+
+#container{
+    width: 1920px;
+    height: 879px;
+    background-image: url("../images/background.jpg");
+    font-family: halloween;
+    color: white;
+    margin: auto;
+    font-size: 2em;
+    position: relative; /* el container se muve */
+}
+
+#p1{
+    position: absolute; /* fijado dentor de su contenedor */
+    top: 600px; 
+    left: 30px;
+}
+
+#p2{
+    position: absolute;
+    top: 700px;
+    left: 30px;
+}
+
+#owl{
+    position: absolute;
+    top: 80px;
+    right: 350px;
+    width: 15%;
+    visibility: hidden;
+}
+
+#rat{
+    position: absolute;
+    top: 500px;
+    right: 550px;
+    width: 15%;
+    visibility: hidden;
+}
+
+#log{ 
+    position: absolute;
+    top: 80px;
+    right: 200px;
+    width: 400px;
+    height: 400px;
+}
+
+#pumpkin{
+    position: absolute;
+    /*top: 80px;*/
+    top: 500px;
+    right: 150px;
+    width: 25%;
+    height: 20%;
+}
+
+#streetLight{
+    position: absolute;
+    top: 200px;
+    right: 55%;
+    width: 45px;
+    height: 40%;
+}
+
+#witch{
+    position: absolute;
+    top: 350px;
+    right: 55%;
+    visibility: hidden;
+}

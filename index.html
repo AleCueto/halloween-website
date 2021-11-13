@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/halloween.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Spooky park</title>
+    <script src="./js/halloween.js"></script>
+</head>
+<body>
+    <audio id="owlSound">
+        <source src="./sounds/owl.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="ratSound">
+        <source src="./sounds/rat.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="witchSound">
+        <source src="./sounds/witch.mp3" type="audio/mpeg">
+    </audio>
+    
+
+    <div id = "container">
+        <h1 id="p1">Welcome to halloween village</h1>
+        <p id="p2">Don't touch the logs!!! <br> watch out for the pumpkin on the right!!! <br> Never touch the streetlight!!!</p>
+        <div id="log" onclick="mostrar('owl'), sonar('owlSound')">
+        </div>
+        <img id="owl" src="./images/owl.gif" onclick="ocultar('owl'), parar('owlSound')">
+        
+        <div id="pumpkin" onclick="mostrar('rat'), sonar('ratSound')">
+        </div>
+        <img id="rat" src="./images/rat.gif"  onclick="ocultar('rat'), parar('ratSound')">
+
+        <div id="streetLight" onclick="mostrar('witch'), sonar('witchSound')">
+        </div>
+        <img id="witch"  onclick="ocultar('witch'), parar('witchSound')" src="./images/witch.gif">
+    </div>
+
+</body>
+</html>
